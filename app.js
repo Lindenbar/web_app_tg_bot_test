@@ -5,6 +5,7 @@ tg.expand();
 let buttons = document.getElementsByTagName('button');
 let callback = undefined;
 let p = document.getElementsByTagName('p');
+tg.MainButton.show();
 
 [...buttons].forEach(button => {
     button.onclick = () => {
@@ -13,6 +14,6 @@ let p = document.getElementsByTagName('p');
     }
 });
 
-tg.onEvent("mainButtonClicked", () => {
-   tg.sendData(callback)
+Telegram.WebApp.onEvent("mainButtonClicked", () => {
+   tg.sendData(callback);
 });
