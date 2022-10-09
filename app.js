@@ -10,7 +10,7 @@ tg.MainButton.show();
 [...buttons].forEach(button => {
     button.onclick = () => {
         callback = button.getAttribute('tg_callback');
-        p.innerHTML = callback;
+        [...p][0].innerHTML = callback;
     }
 });
 
