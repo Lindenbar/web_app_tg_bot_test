@@ -1,0 +1,181 @@
+.node-container {
+    padding: 0.6em;
+
+}
+
+.prompt-txt-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vw;
+
+    border-radius: 8px 8px 0 0;
+    border: solid 0.8vw var(--color-primary);
+
+    font-size: 5vw;
+}
+
+.prompt-txt-input:focus {
+    outline: none;
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}
+
+.prompt-txt-input::placeholder {
+    color: var(--color-placeholder);
+}
+
+.prompt-txt-input:focus::placeholder {
+    color: var(--color-placeholder-light);
+}
+
+.prompt {
+    padding: 1vw 4vw 2vw 4vw;
+    max-height: 3vw;
+
+    background-color: var(--color-placeholder-light);
+    border-radius: 0 0 8px 8px;
+    border: solid 0.1vw var(--color-placeholder);
+    cursor: pointer;
+    transition: max-height 0.3s, color 0.3s;
+
+    color: transparent;
+    font-size: 3vw;
+}
+
+.prompt.open {
+    max-height: 30vw;
+    height: unset;
+    color: var(--color-base-text);
+}
+
+.div-box-prompt {
+    padding: 2vw;
+
+    border: solid 0.1vw var(--color-placeholder);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.div-box-prompt_title {
+    margin-bottom: 1vw;
+    font-size: 5vw;
+}
+
+.div-box-prompt_values {
+    display: flex;
+
+    min-height: 6vw;
+    padding: 2vw;
+    margin-bottom: 1vw;
+
+    flex-wrap: wrap;
+    border-radius: 4px;
+    border: solid 0.1vw var(--color-placeholder);
+
+    font-size: 3vw;
+}
+
+.box-value,
+.box-value-operator {
+    padding: 0.6vw;
+    margin: 0.6vw;
+
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+
+    color: var(--color-light);
+}
+
+.box-value {
+    background-color: var(--color-placeholder);
+}
+
+.div-box-prompt_templates {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 2vw;
+    margin-bottom: 1vw;
+
+    border-radius: 4px;
+    border: solid 0.1vw var(--color-placeholder);
+
+    font-size: 3vw;
+}
+
+.box-operator {
+    min-width: 10vw;
+    padding: 0.6vw;
+
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+
+    color: var(--color-light);
+    text-align: center;
+}
+
+.div-box-prompt_btns {
+    font-size: 4vw;
+}
+
+.div-box-prompt_input .prompt-txt-input {
+    border-bottom: none;
+}
+
+.div-box-prompt_btns div {
+    padding: 2vw;
+
+    border-radius: 0 0 4px 4px;
+    background-color: var(--color-primary-shade);
+    cursor: pointer;
+
+    color: var(--color-light);
+    text-align: center;
+}
+
+.default-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.default-toggle input {
+    display: none;
+}
+
+.default-toggle_text {
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+}
+
+.default-toggle_slider {
+    width: 16vw;
+    height: 8vw;
+    margin-right: 2vw;
+
+    border-radius: 15vw;
+    background-color: var(--color-placeholder);
+
+    transition: background-color 0.3s;
+}
+
+.default-toggle_btn {
+    width: 8vw;
+    height: 8vw;
+
+    border-radius: 50%;
+    background-color: var(--color-placeholder-light);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.default-toggle input:checked + .default-toggle_slider {
+    background-color: var(--color-placeholder-light);
+}
+
+.default-toggle input:checked + .default-toggle_slider .default-toggle_btn {
+    transform: translateX(100%);
+    background-color: var(--color-primary);
+}

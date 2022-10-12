@@ -1,0 +1,28 @@
+[
+  {
+    "app": "parse_messages",
+    "title": "Парсер сообщений/постов",
+    "descr": "Парсинг сообщений/постов в чатах и группах",
+    "img": "",
+    "args": {
+      "chat_id": {
+        "required": true,
+        "title": "Идентификатор чата",
+        "descr": "TO-DO",
+        "node": "select",
+        "select": {
+          "username": {
+            "title": "",
+            "descr": "",
+            "valid": "/(^[^@].{4,31}$)|(^@.{5,32}$)/"
+          },
+          "link": {
+            "title": "",
+            "descr": "",
+            "valid": "/(^https:\\/\\/t\\.me\\/.{5,32}$)|(t\\.me\\/.{5,32}$)/"
+          }
+        }
+      }
+    }
+  }
+]

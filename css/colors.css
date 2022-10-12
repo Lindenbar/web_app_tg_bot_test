@@ -1,0 +1,9 @@
+:root {
+    --color-base-text: black;
+    --color-primary: #3390ec;
+    --color-primary-shade: #2f84d9;
+    --color-primary-shade-darker: #2b79c6;
+    --color-light: white;
+    --color-placeholder: #a2acb4;
+    --color-placeholder-light: #e8f3ff;
+}

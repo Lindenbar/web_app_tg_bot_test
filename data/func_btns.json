@@ -1,0 +1,44 @@
+[
+  {
+    "id": "messages_parser",
+    "text": "Парсер сообщений",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  },
+  {
+    "id": "user_parser",
+    "text": "Юзер парсер",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  },
+  {
+    "id": "mailer",
+    "text": "Рассылка",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  },
+  {
+    "id": "inviter",
+    "text": "Инвайтинг",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  },
+  {
+    "id": "acceptor",
+    "text": "Автоакцепт",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  },
+  {
+    "id": "censurer",
+    "text": "Цензура",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  },
+  {
+    "id": "deleter",
+    "text": "Удалятор :)",
+    "class": "default-btn",
+    "callback": "buildFuncSettings"
+  }
+]

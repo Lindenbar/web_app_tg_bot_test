@@ -1,0 +1,19 @@
+.default-btn {
+    padding: 0.6em;
+    margin-bottom: 0.4em;
+
+    border-radius: 8px;
+    border: solid 0.8vw var(--color-primary);
+
+    text-align: center;
+    font-size: 8vw;
+    overflow-wrap: break-word;
+    color: var(--color-primary);
+}
+
+.default-btn:hover,
+.default-btn:active {
+    cursor: pointer;
+    color: var(--color-light);
+    background-color: var(--color-primary);
+}

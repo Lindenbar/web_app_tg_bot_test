@@ -1,0 +1,58 @@
+[
+  {
+    "id": "messages_parser",
+    "title": "Парсер сообщений: настройки",
+    "args": {
+      "chat_id": {
+        "node": "input",
+        "type": "text",
+        "required": true,
+        "placeholder": "Идентификатор чата/группы",
+        "valid": "",
+        "prompt": "Какая-то подсказка Какая-то подсказка Какая-то подсказка Какая-то подсказка Какая-то подсказка Какая-то подсказка Какая-то подсказка",
+        "class": "prompt-txt-input"
+      },
+      "keywords": {
+        "node": "div",
+        "type": "box",
+        "required": false,
+        "title": "Ключевые слова",
+        "placeholder": "Ключ",
+        "prompt": "Какая-то подсказка",
+        "templates": {
+          "И": "and",
+          "ИЛИ": "or",
+          "НЕ": "not"
+        },
+        "class": "div-box-prompt"
+      },
+      "count": {
+        "node": "input",
+        "type": "text",
+        "required": false,
+        "placeholder": "Количество сообщений",
+        "valid": "",
+        "prompt": "Какая-то подсказка",
+        "class": "prompt-txt-input"
+      },
+      "captions": {
+        "node": "input",
+        "type": "checkbox",
+        "value": true,
+        "required": false,
+        "text": "Парсить подписи сообщения",
+        "prompt": "",
+        "class": "default-toggle"
+      },
+      "text": {
+        "node": "input",
+        "type": "checkbox",
+        "value": true,
+        "required": false,
+        "text": "Парсить текст сообщения",
+        "prompt": "",
+        "class": "default-toggle"
+      }
+    }
+  }
+]
